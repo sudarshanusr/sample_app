@@ -1,1 +1,11 @@
-<h1>Sudarshan</h1>
+
+<%= link_to 'Add New Post' ,new_post_path %> 
+
+<% @posts.each do |f|%>
+	<p>
+		Name : <%= f.name %><br>
+		Bio : <%= f.bio %><br>
+		Age : <%= f.age %><br>
+		<%= link_to 'Edit' ,edit_post_path(f) %> | <%= link_to 'Show' ,post_path(f) %> | <%= link_to 'Delete',f ,method: :delete%>
+	</p>
+<% end%>

@@ -1,0 +1,19 @@
+<%= form_for @post do |f|%>
+	<p>
+		<%= f.label :'Enter Name' %>
+		<%= f.text_field :name %>
+	</p>	
+	<p>
+		<%= f.label :bio %>
+		<%= f.text_field :bio %>
+	</p>
+
+	<p>
+		<%= f.label :'Age' %>
+		<%= f.text_field :age %>
+	</p>
+
+		<%= f.submit 'submit'  %>
+
+
+<%end%>
